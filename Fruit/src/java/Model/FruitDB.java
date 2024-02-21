@@ -62,6 +62,8 @@ public class FruitDB implements DatabaseInfo {
         }
         return f;
     }
+    
+    
 
     public static void main(String[] a) {
         ArrayList<Fruit> list = FruitDB.getFruits("apple");

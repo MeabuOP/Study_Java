@@ -2,6 +2,8 @@
 <%@ page import="Model.*" %>
 <%@ page import="java.util.*" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,7 +46,7 @@
                             <td>${fruit.description}</td>
                             <td>${fruit.price}</td>
                             <td><a href="DeleteServlet?productID=${fruit.productId}">Delete</a></td>
-                            <td><a href="">Update</a></td>
+                            <td><a href="UpdateServlet?productID=${fruit.productId}">Update</a></td>
                         </tr>
                     </c:forEach>
                 </c:if>
